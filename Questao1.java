@@ -1,13 +1,14 @@
 import java.io.Console;
 import java.util.Scanner;
 
-public class Main {
+public class Questao1 {
 
 public static void main(String[] args) {
 
     Scanner s = new Scanner(System.in);
 
-    /* ////// questao 1
+    /* Crie um scanner (imput) 
+    */
 
     for(int i = 0; i < 10; i++){
 
@@ -22,7 +23,7 @@ public static void main(String[] args) {
     } 
     }
     
-    */
+    
     
     ///// questao 2
     /* 
