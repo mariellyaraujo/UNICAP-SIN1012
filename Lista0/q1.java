@@ -7,21 +7,21 @@ public class q1 {
 
         Scanner s = new Scanner(System.in);
 
-        int a = s.nextInt();
+        int y = s.nextInt();
 
-        if (a <= 0) {
+        if (y <= 0) {
             System.out.println("Min Volume");
 
-        } else if (a > 0 && a <= 25) {
+        } else if (y > 0 && y <= 25) {
             System.out.println("Low Volume");
 
-        } else if (a > 25 && a <= 75) {
+        } else if (y > 25 && y <= 75) {
             System.out.println("Medium Volume");
             
-        } else if (a > 75 && a < 100) {
+        } else if (y > 75 && y < 100) {
             System.out.println("High Volume");
             
-        } else if (a >= 100) {
+        } else if (y >= 100) {
             System.out.println("Max Volume");
             
         }
