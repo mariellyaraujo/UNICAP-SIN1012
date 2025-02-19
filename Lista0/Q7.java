@@ -20,7 +20,7 @@ public class Q7 {
             }
 
         } else {
-            System.out.print("Escreva um número maior ou igual que 1 e maior ou igual que 20");
+            System.out.print("Escreva um número entre 1 e 20");
         }
     }
 }
