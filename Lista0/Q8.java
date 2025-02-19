@@ -9,5 +9,11 @@ public class Q8 {
 
         int a = s.nextInt();
 
+        if(a >= 2 && a <= 20) {
+
+        } else {
+            System.out.println("Escreva um número entre 2 e 20");
+        }
+
     }
 }
