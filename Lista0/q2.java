@@ -3,7 +3,7 @@ package Lista0;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class q2 {
+public class Q2 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
