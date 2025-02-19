@@ -19,11 +19,11 @@ public class Q3 {
         if (delta > 0) {
             ///duas raizes
             
-            x1 = ((B * -1) + Math.sqrt(delta)) / (2 * A);
+            x1 = (-B - Math.sqrt(delta)) / (2 * A);
 
-            x2 = ((B * +1) - Math.sqrt(delta)) / (2 * A);
+            x2 = (-B + Math.sqrt(delta)) / (2 * A);
 
-            System.out.println("As raizes sao" + x1 + "e" + x2);
+            System.out.println("As raizes sao " + x1 + "e " + x2);
 
 
         } else if (delta == 0) {
