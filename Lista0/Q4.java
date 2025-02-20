@@ -4,24 +4,25 @@ import java.util.Scanner;
 
 public class Q4 {
 
-    public static int verifBissexto(int a, int diaMax) {
+    public static int verifBissexto(int a, int fev) {
+
         if (a % 4 == 0) {
             if(a % 100 == 0) {
 
                 if(a % 400 == 0) {
-                    diaMax = 29;
+                    fev = 29;
                 } else {
-                    diaMax = 28;
+                    fev = 28;
                 }
             } else {
-                diaMax = 29;
+                fev = 29;
             }
 
         } else {
-            diaMax = 28;
+            fev = 28;
         }
-
-        return diaMax;
+        System.out.println(fev);
+        return fev;
     }
 
     public static void main(String[] args) {
@@ -35,6 +36,5 @@ public class Q4 {
 
         verifBissexto(ano, diaMax);
 
-        System.out.println(diaMax);
     }
 }
