@@ -25,7 +25,16 @@ public class Q4 {
     }
 
     public static void main(String[] args) {
+        int dia, mes, ano, diaMax = 0;
         
-        
+        Scanner s = new Scanner(System.in);
+
+        dia = s.nextInt();
+        mes = s.nextInt();
+        ano = s.nextInt();
+
+        verifBissexto(ano, diaMax);
+
+        System.out.println(diaMax);
     }
 }
