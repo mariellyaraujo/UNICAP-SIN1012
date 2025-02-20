@@ -6,7 +6,7 @@ public class Q6 {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
-        int soma = 0, livro = 0, quant = -1, a;
+        int soma = 0, quant = -1, a;
         
         while(soma <= 18) {
             a = s.nextInt();
