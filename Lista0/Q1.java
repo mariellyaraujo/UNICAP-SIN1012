@@ -21,7 +21,7 @@ public class Q1 {
         } else if (y > 75 && y < 100) {
             System.out.println("High Volume");
             
-        } else if (y >= 100) {
+        } else {
             System.out.println("Max Volume");
             
         }
