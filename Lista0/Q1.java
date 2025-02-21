@@ -25,5 +25,7 @@ public class Q1 {
             System.out.println("Max Volume");
             
         }
+
+        s.close();
     } 
 }
