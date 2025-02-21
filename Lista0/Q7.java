@@ -22,5 +22,7 @@ public class Q7 {
         } else {
             System.out.print("Escreva um número entre 1 e 20");
         }
+
+        s.close();
     }
 }
