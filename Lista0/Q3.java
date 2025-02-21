@@ -44,5 +44,7 @@ public class Q3 {
         System.out.println("O coeficiente nao pode ser zero!");
     }
 
+    s.close();
+
     }
 }
