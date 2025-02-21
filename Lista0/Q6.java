@@ -14,7 +14,7 @@ public class Q6 {
             quant++;
       
           }
-      
+          s.close();
           System.out.print(quant);
           
     }
