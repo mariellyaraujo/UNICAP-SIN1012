@@ -108,8 +108,6 @@ public class Q4 {
                 break;
 
         }
-
          s.close();
-
     }
 }
