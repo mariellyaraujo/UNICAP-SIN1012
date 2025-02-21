@@ -124,5 +124,7 @@ public class Q4 {
 
          }
 
+         s.close();
+
     }
 }
