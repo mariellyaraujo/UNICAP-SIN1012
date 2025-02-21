@@ -13,19 +13,16 @@ public class Q2 {
         nums[1] = s.nextInt();
         nums[2] = s.nextInt();
 
-        for(int i=0;i<nums.length;i++) {
+        s.close();
 
-            nums[i]=-nums[i];
-        }
-        
         Arrays.sort(nums);
-        
-        for(int i=0;i<nums.length;i++) {
-        
-            nums[i]=-nums[i]; 
+        for (int i = 0; i < nums.length / 2; i++) {
+            int temp = nums[i];
+            nums[i] = nums[nums.length - 1 - i];
+            nums[nums.length - 1 - i] = temp;
         }
         
-        System.out.println(nums[0] + ">=" + nums[1] + ">=" + nums[2]);
+        System.out.println(nums[0] + " >= " + nums[1] + " >= " + nums[2]);
 
         s.close();
         
