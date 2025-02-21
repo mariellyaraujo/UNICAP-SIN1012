@@ -16,7 +16,7 @@ public class Q7 {
                     System.out.print("*");
                     
                     }
-                    System.out.print("\n");
+                    System.out.println();
             }
 
         } else {
