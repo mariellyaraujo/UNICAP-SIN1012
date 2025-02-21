@@ -26,6 +26,8 @@ public class Q2 {
         }
         
         System.out.println(nums[0] + ">=" + nums[1] + ">=" + nums[2]);
+
+        s.close();
         
     }
 }
