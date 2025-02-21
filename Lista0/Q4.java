@@ -31,6 +31,13 @@ public class Q4 {
 
         int[] fev = new int[1];
 
+        if (mes <= 0 || mes > 12) {
+            System.out.println("Data invalida");
+            s.close();
+            return;
+
+        } 
+
         if (mes == 2) {
             verifBissexto(ano, fev);
 
@@ -41,88 +48,66 @@ public class Q4 {
 
         } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
             diaMax = 30;
+
         }
 
-        
-        if (dia > diaMax || dia <= 0) {
+        if (dia <= 0 || dia > diaMax) {
             System.out.println("Data invalida");
-         } else {
-            if (mes == 1) {
-                if (dia >= 1 && dia <= 19) {
-                    System.out.println("Capricornio");
-                } else if (dia >= 20 && dia <= diaMax) {
-                    System.out.println("Aquario");
-                }
-            } else if (mes == 2) {
-                if (dia >= 1 && dia <= 18) {
-                    System.out.println("Aquario");
-                } else if (dia >= 19 && dia <= diaMax) {
-                    System.out.println("Peixes");
-                }
+            s.close();
+            return;
+        }
 
-            } else if (mes == 3) {
-                if (dia >= 1 && dia <= 20) {
-                    System.out.println("Peixes");
-                } else if (dia >= 21 && dia <= diaMax) {
-                    System.out.println("Aries");
-                }
-            } else if (mes == 4) {
-                if (dia >= 1 && dia <= 19) {
-                    System.out.println("Aries");
-                } else if (dia >= 20 && dia <= diaMax) {
-                    System.out.println("Touro");
-                }
-            } else if (mes == 5) {
-                if (dia >= 1 && dia <= 20) {
-                    System.out.println("Touro");
-                } else if (dia >= 21 && dia <= diaMax) {
-                    System.out.println("Gemeos");
-                }
-            } else if (mes == 6) {
-                if (dia >= 1 && dia <= 21) {
-                    System.out.println("Gemeos");
-                } else if (dia >= 22 && dia <= diaMax) {
-                    System.out.println("Cancer");
-                }
-            } else if (mes == 7) {
-                if (dia >= 1 && dia <= 22) {
-                    System.out.println("Cancer");
-                } else if (dia >= 23 && dia <= diaMax) {
-                    System.out.println("Leao");
-                }
-            } else if (mes == 8) {
-                if (dia >= 1 && dia <= 22) {
-                    System.out.println("Leao");
-                } else if (dia >= 23 && dia <= diaMax) {
-                    System.out.println("Virgem");
-                }
-            } else if (mes == 9) {
-                if (dia >= 1 && dia <= 22) {
-                    System.out.println("Virgem");
-                } else if (dia >= 23 && dia <= diaMax) {
-                    System.out.println("Libra");
-                }
-            } else if (mes == 10) {
-                if (dia >= 1 && dia <= 22) {
-                    System.out.println("Libra");
-                } else if (dia >= 23 && dia <= diaMax) {
-                    System.out.println("Escorpiao");
-                }
-            } else if (mes == 11) {
-                if (dia >= 1 && dia <= 21) {
-                    System.out.println("Escorpiao");
-                } else if (dia >= 22 && dia <= diaMax) {
-                    System.out.println("Sargitario");
-                }
-            } else if (mes == 12) {
-                if (dia >= 1 && dia <= 21) {
-                    System.out.println("Sargitario");
-                } else if (dia >= 22 && dia <= diaMax) {
-                    System.out.println("Capricornio");
-                }
-            }
 
-         }
+        switch(mes) {
+            case 1:
+                System.out.println((dia <=19) ? "Capricornio" : "Aquario");
+                break;
+
+            case 2:
+                System.out.println((dia <= 18) ? "Aquario" : "Peixes");
+                break;
+
+            case 3:
+                System.out.println((dia <= 20) ? "Peixes" : "Aries");
+                break;
+
+            case 4:
+                System.out.println((dia <= 19) ? "Aries" : "Touro");
+                break;
+
+            case 5:
+                System.out.println((dia <= 20) ? "Touro" : "Gemeos");
+                break;
+            
+            case 6:
+                System.out.println((dia <= 21) ? "Gemeos" : "Cancer");
+                break;
+
+            case 7:
+                System.out.println((dia <= 22) ? "Cancer" : "Leao");
+                break;
+            
+            case 8:
+                System.out.println((dia <= 22) ? "Leao" : "Virgem");
+                break;
+
+            case 9:
+                System.out.println((dia <= 22) ? "Virgem" : "Libra");
+                break;
+            
+            case 10:
+                System.out.println((dia <= 22) ? "Libra" : "Escorpiao");
+                break;
+
+            case 11:
+                System.out.println((dia <= 21) ? "Escorpiao" : "Sagitario");
+                break;
+
+            case 12:
+                System.out.println((dia <= 21) ? "Sagitario" : "Capricornio");
+                break;
+
+        }
 
          s.close();
 
