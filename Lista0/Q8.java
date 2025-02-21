@@ -29,5 +29,7 @@ public class Q8 {
             System.out.println("Escreva um número entre 2 e 20");
         }
 
+        s.close();
+
     }
 }
