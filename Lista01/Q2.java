@@ -8,11 +8,11 @@ import java.util.Random;
             Random aleatorio = new Random();
 
             for(int i = 0; i < numeros.length; i++){
-                numeros[i] = aleatorio.nextInt();
+                numeros[i] = aleatorio.nextInt(100) + 1;
             }
 
             for(int i = 0; i < numeros.length; i++){
-                System.out.println("numero: " + numeros[i] + ", sucessor: " + numeros[i]+1 + ";");
+                System.out.println("numero: " + numeros[i] + ", sucessor: " + (numeros[i]+1) + ";");
             }
         }
     }
