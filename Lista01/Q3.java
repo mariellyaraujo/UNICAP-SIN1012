@@ -12,6 +12,14 @@ import java.util.Scanner;
 
             s.close();
 
-            
+            if (b > a){
+                for(int i = a+1; i < b; i++){
+                    if(i != b-1){
+                    System.out.print(i + ", ");
+                    } else {
+                        System.out.print(i + ".");
+                    }
+                }
+            }
         }
     }
