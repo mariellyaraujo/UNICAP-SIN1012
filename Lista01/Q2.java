@@ -10,5 +10,9 @@ import java.util.Random;
             for(int i = 0; i < numeros.length; i++){
                 numeros[i] = aleatorio.nextInt();
             }
+
+            for(int i = 0; i < numeros.length; i++){
+                System.out.println("numero: " + numeros[i] + ", sucessor: " + numeros[i]+1 + ";");
+            }
         }
     }
