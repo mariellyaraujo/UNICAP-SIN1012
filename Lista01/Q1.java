@@ -22,10 +22,21 @@ public class Q1 {
             }
         }
 
+        s.close();
+
         System.out.println("Numero de consoantes: " + counter);
 
+        if (counter == 0){
+            System.out.println("Nenhuma consoante digitada.");
+            return;
+        }
+
         for(int i = 0; i < counter; i++) {
-            System.out.print(consoantes[i] + " ");
+            if(i != counter-1) {
+            System.out.print(consoantes[i] + ", ");
+            } else {
+                System.out.print(consoantes[i]);
+            }
         }
     }
 }
