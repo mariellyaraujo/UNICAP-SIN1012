@@ -12,6 +12,7 @@ public class Q5 {
 
         int[] numeros = new int[n];
 
+        System.out.println("Digite os numeros:");
         while(count < numeros.length){
             a = s.nextInt();
             numeros[count] = a;
@@ -35,5 +36,7 @@ public class Q5 {
                 System.out.println("Numero nao encontrado");
             }
         }
+
+        s.close();
     }
 }
