@@ -22,5 +22,12 @@ public class Q5 {
         for(int i = 0; i < numeros.length; i++){
             System.out.println(i + ": " + numeros[i]);
         }
+
+        System.out.println("Que numero gostaria de buscar?");
+        int m = s.nextInt();
+
+        for(int i = 0; i < numeros.length; i++){
+            
+        }
     }
 }
