@@ -12,6 +12,10 @@ import java.util.Scanner;
 
             s.close();
 
+            if (b == a){
+                System.out.println("Nao ha intervalo");
+                return;
+            }
             if (b > a){
                 for(int i = a+1; i < b; i++){
                     if(i != b-1){
@@ -19,6 +23,14 @@ import java.util.Scanner;
                     } else {
                         System.out.print(i + ".");
                     }
+                }
+            } else if (a > b) {
+                for(int i = a-1; i > b; i--){
+                    if(i != b+1){
+                        System.out.print(i + ", ");
+                        } else {
+                            System.out.print(i + ".");
+                        }
                 }
             }
         }
