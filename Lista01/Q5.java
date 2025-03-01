@@ -15,8 +15,12 @@ public class Q5 {
         while(count < numeros.length){
             a = s.nextInt();
             numeros[count] = a;
+
+            count++;
         }
 
-        
+        for(int i = 0; i < numeros.length; i++){
+            System.out.println(i + ": " + numeros[i]);
+        }
     }
 }
