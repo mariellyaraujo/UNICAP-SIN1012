@@ -27,7 +27,13 @@ public class Q5 {
         int m = s.nextInt();
 
         for(int i = 0; i < numeros.length; i++){
-            
+            if(numeros[i] == m){
+                System.out.println("Numero: " + numeros[i]);
+                System.out.println("Indice: " + i);
+                break;
+            } else if (i == numeros.length - 1){
+                System.out.println("Numero nao encontrado");
+            }
         }
     }
 }
