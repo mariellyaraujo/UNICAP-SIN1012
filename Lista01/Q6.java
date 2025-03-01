@@ -17,5 +17,7 @@ public class Q6 {
             }
         System.out.println();
         }
+
+        s.close();
     }
 }
