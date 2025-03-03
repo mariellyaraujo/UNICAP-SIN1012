@@ -15,7 +15,7 @@ public class Q1 {
         for(int i = 0; i < 6; i++){
             vetor[i] = s.next().charAt(0);
 
-            if (vetor[i] != 'a' && vetor[i] != 'e' && vetor[i] != 'i' && vetor[i] != 'o' && vetor[i] != 'u') {
+            if ("aeiouAEIOU".indexOf(vetor[i]) == -1) {
                 consoantes[counter] = vetor[i];
 
                 counter++;
