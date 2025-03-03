@@ -14,8 +14,19 @@ public class Q4{
 
             if(a.equals(ultimaString)) {
                 System.err.println(count + concatenacao + maior);
+                break;
+            } else {
+                concatenacao = concatenacao + a;
+
+                if (a.length() < maior.length()) {
+                    maior = a;
+                    continue;
+                }
             }
 
+
         }
+
+        s.close();
     }
 }
