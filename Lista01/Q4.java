@@ -13,7 +13,9 @@ public class Q4{
             count++;
 
             if(a.equals(ultimaString)) {
-                System.err.println(count + concatenacao + maior);
+                System.out.printf("numero de strings escritas: %d", count);
+                System.err.printf("concatenacao: %d", concatenacao);
+                System.err.printf("maior string: %d", maior);
                 break;
             } else {
                 concatenacao = concatenacao + a;
