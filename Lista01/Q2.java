@@ -12,7 +12,7 @@ import java.util.Random;
             }
 
             for(int i = 0; i < numeros.length; i++){
-                System.out.println("numero: " + numeros[i] + ", sucessor: " + (numeros[i]+1) + ";");
+                System.out.printf("Número: %d | Sucessor: %d%n", numeros[i], numeros[i] + 1);
             }
         }
     }
