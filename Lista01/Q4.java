@@ -18,7 +18,7 @@ public class Q4{
             } else {
                 concatenacao = concatenacao + a;
 
-                if (a.length() < maior.length()) {
+                if (a.length() > maior.length()) {
                     maior = a;
                     continue;
                 }
