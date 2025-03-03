@@ -22,6 +22,8 @@ public class Q4{
                     maior = a;
                     continue;
                 }
+
+                ultimaString = a;
             }
 
 
