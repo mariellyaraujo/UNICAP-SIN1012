@@ -17,6 +17,8 @@ public class Q2V {
         for(int i = 0; i < vet.length; i++){
             System.out.print(vet[i] + " ");
         }
+
+        s.close();
     }
     
 }
