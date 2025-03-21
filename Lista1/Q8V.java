@@ -15,7 +15,7 @@ public class Q8V {
         }
 
         System.out.println("Preencha os valores do segundo vetor:");
-        for(int i = 0; i < a.length; i++){
+        for(int i = 0; i < b.length; i++){
             b[i] = s.nextInt();
         }
 
@@ -33,5 +33,6 @@ public class Q8V {
             System.out.print(c[i] + " ");
         }    
 
+        s.close();
     }
 }
