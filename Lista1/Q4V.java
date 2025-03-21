@@ -15,5 +15,7 @@ public class Q4V {
         for(int i = nomes.length - 1; i >= 0; i--) {
             System.out.println(nomes[i]);
         }
+
+        s.close();
     }
 }
