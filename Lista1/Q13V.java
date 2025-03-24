@@ -1,6 +1,6 @@
 package Lista1;
 import java.util.Scanner;
-public class Q9V {
+public class Q13V {
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
 
