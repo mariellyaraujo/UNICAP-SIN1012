@@ -8,6 +8,9 @@ public class Q12V {
         }
     }
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int[] vet = new int[10];
+
         
     }
 }
