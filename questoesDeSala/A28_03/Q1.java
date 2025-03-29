@@ -65,6 +65,16 @@ public class Q1 {
         }
     }
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int[] vetor = new int[10];
+
+        lerVetor(vetor, s);
+
+        int x = s.nextInt();
+
+        verifQuant(vetor, x);
+        verifSort(vetor);
         
     }
 }
