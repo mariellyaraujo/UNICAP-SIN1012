@@ -1,5 +1,7 @@
 package questoesDeSala.A28_03;
 
+import java.util.Scanner;
+
 public class Q1 {
     public static void verifSort(int[] v){
         int result = 0, numAtual = 0, verif = 0;
@@ -55,6 +57,12 @@ public class Q1 {
         System.out.println("Números maiores que X: " + maior);
         System.out.println("Números menores que X: " + menor);
         System.out.println("Números iguais a X: " + igual);
+    }
+
+    public static void lerVetor(int[] v, Scanner s){
+        for(int i = 0; i < v.length; i++){
+            v[i] = s.nextInt();
+        }
     }
     public static void main(String[] args) {
         
