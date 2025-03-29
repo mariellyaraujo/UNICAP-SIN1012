@@ -2,12 +2,12 @@ package questoesDeSala.A28_03;
 import java.util.Scanner;
 public class Q2 {
 
-    public static void resultante(int[][] a, int[][] b){
-        int[][] result = new int[4][4];
+    public static void matrizResultante(int[][] a, int[][] b){
+        int[][] resultante = new int[4][4];
 
-        for(int i = 0; i < result.length; i++){
-            for(int j = 0; i < result[i].length; j++){
-                result[i][j] = a[i][j] + b[i][j];
+        for(int i = 0; i < resultante.length; i++){
+            for(int j = 0; i < resultante[i].length; j++){
+                resultante[i][j] = a[i][j] + b[i][j];
             }
         }
     }
