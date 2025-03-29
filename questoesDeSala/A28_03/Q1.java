@@ -39,6 +39,23 @@ public class Q1 {
             break;
         }
     }
+    public static void verifQuant(int[] v, int x){
+        int maior = 0, menor = 0, igual = 0;
+
+        for(int i = 0; i < v.length; i++){
+            if(v[i] > x){
+                maior += 1;
+            } else if(v[i] == x) {
+                igual += 1;
+            } else {
+                menor += 1;
+            }
+        }
+
+        System.out.println("Números maiores que X: " + maior);
+        System.out.println("Números menores que X: " + menor);
+        System.out.println("Números iguais a X: " + igual);
+    }
     public static void main(String[] args) {
         
     }
