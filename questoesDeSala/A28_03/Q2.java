@@ -19,6 +19,15 @@ public class Q2 {
             }
         }
     }
+
+    public static void printMatriz(int[][] v){
+        for(int i = 0; i < v.length; i++){
+            for(int j = 0; j < v[i].length; j++){
+                System.out.print(v[i] + " ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
