@@ -1,4 +1,4 @@
-package questoesDeSala.A28_03;
+package questoesDeSala.A03_28;
 
 import java.util.Scanner;
 

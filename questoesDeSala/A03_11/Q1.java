@@ -1,4 +1,4 @@
-package questoesDeSala.A11_03;
+package questoesDeSala.A03_11;
 
 public class Q1 {
     public static void main(String[] args) {
