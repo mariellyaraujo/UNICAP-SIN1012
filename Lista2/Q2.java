@@ -15,16 +15,28 @@ public class Q2 {
     }
 
     public static int vencedor(int[] contagem){
-        int[] resultadoVotos = contarVotos(contagem);
+  
         int votosVencedor = 0;
         int indiceVencedor = 0;
 
-        for(int i = 0; i < resultadoVotos.length; i++){
-            if(resultadoVotos[i] > votosVencedor){
-                votosVencedor = resultadoVotos[i];
+        for(int i = 0; i < contagem.length; i++){
+            if(contagem[i] > votosVencedor){
+                votosVencedor = contagem[i];
                 indiceVencedor = i;
             }
         }
         return indiceVencedor;
+    }
+
+    public static void main(String[] args) {
+        int[] votos = {0, 1,4,3,3,2,1,4,4,2,0,1,1,3,2,2,4,4,1,0};
+        int[] contagem = contarVotos(votos);
+
+
+        for(int i = 0; i < contagem.length; i++){
+            System.out.print(contagem[i] + " ");
+        }
+
+        System.out.println(vencedor(contagem));
     }
 }
