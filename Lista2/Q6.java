@@ -3,37 +3,19 @@ package Lista2;
 public class Q6 {
 
     public static void Vencer(char[][] tab, char jogador){
-        int digPrincipal = 0, linha = 0, coluna = 0, digSecundaria = 0;
+        int digPrincipal = 0, digSecundaria = 0;
         for(int i = 0; i < tab.length; i++){
-            linha = 0;
-            coluna = 0;
-            for(int j = 0; j < tab.length; j++){
-                if (i == j) {
-                    if(tab[i][j] == jogador){
-                        digPrincipal++;
-                    }
-                } else if (i == tab.length - j - 1){
-                    if(tab[i][j] == jogador){
-                        digSecundaria++;
-                    }
-                } else if (tab[i][j] == jogador){
-                    linha++;
-                } else if (tab[j][i] == jogador){
-                    coluna++;
-                }
-            }
-        }
+            int linha = 0, coluna = 0;
 
-        if(digPrincipal==3) {
-            System.out.println("true (jogador " + jogador + " venceu na diagonal principal");
-        } else if (digSecundaria == 3){
-            System.out.println("true (jogador " + jogador + " venceu na diagonal secundaria");
-        } else if (linha == 3){
-            System.out.println("true (jogador " + jogador + " venceu na linha");
-        } else if (coluna == 3){
-            System.out.println("true (jogador " + jogador + " venceu na coluna");
-        } else {
-            System.out.println("false (velha)");
+            for(int j = 0; j < tab.length; j++){
+
+                if(tab[i][j] == jogador) linha++;
+                if(tab[j][i] == jogador) coluna++;
+
+                if(i == j && tab[i][j] == jogador) digPrincipal++;
+                if(i + j == tab.length - 1 && tab[i][j] == jogador) digSecundaria++;
+                
+            }
         }
 
     }
