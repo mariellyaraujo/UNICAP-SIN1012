@@ -51,8 +51,8 @@ public class Q8 {
             {12, 14, 15, 13, 10}
         };
 
-        System.out.println(pontoMaisAlto(mapa));
-        System.out.println(mediaAltitude(mapa));
-        System.out.println(ehPlanalto(mapa));
+        System.out.println("ponto mais alto = " + pontoMaisAlto(mapa));
+        System.out.println("media = " + mediaAltitude(mapa));
+        System.out.println("eh planalto? = " + ehPlanalto(mapa));
     }
 }
