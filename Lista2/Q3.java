@@ -29,4 +29,12 @@ public class Q3 {
         }
         return menor;
     }
+
+    public static void main(String[] args){
+        double[] temps = {30.5, 32.0, 29.0, 28.5, 31.0, 27.5, 33.0};
+
+        System.out.println(media(temps));
+        System.out.println(diasAcimaMedia(temps));
+        System.out.println(menorTemperatura(temps));
+    }
 }
