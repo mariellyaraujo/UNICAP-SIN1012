@@ -13,4 +13,18 @@ public class Q2 {
         }
         return resultadoVotos;
     }
+
+    public static int vencedor(int[] contagem){
+        int[] resultadoVotos = contarVotos(contagem);
+        int votosVencedor = 0;
+        int indiceVencedor = 0;
+
+        for(int i = 0; i < resultadoVotos.length; i++){
+            if(resultadoVotos[i] > votosVencedor){
+                votosVencedor = resultadoVotos[i];
+                indiceVencedor = i;
+            }
+        }
+        return indiceVencedor;
+    }
 }
