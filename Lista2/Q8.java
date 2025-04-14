@@ -12,4 +12,18 @@ public class Q8 {
 
         return maior;
     }
+
+    public static double mediaAltitude(int[][] mapa){
+        double soma = 0;
+        int count = 0;
+        for(int i = 0; i < mapa.length; i++){
+            for(int j = 0; j < mapa[i].length; j++){
+                soma += mapa[i][j];
+                count++;
+            }
+        }
+
+        return soma / count;
+
+    }
 }
