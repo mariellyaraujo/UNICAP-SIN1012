@@ -23,7 +23,7 @@ public class Q7 {
 
         return totalTrimestre;
     }
-    public static void pintVetor(double[] x){
+    public static void printVetor(double[] x){
         for(int i = 0; i < x.length; i++){
             System.out.print(x[i] + " ");
         }
