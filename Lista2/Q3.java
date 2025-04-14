@@ -21,4 +21,12 @@ public class Q3 {
 
         return count;
     }
+
+    public static double menorTemperatura(double[] temps){
+        double menor = temps[0];
+        for(int i = 0; i < temps.length; i++){
+            if(temps[i] < menor) menor = temps[i];
+        }
+        return menor;
+    }
 }
