@@ -41,4 +41,18 @@ public class Q8 {
             return false;
         }
     }
+
+    public static void main(String[] args) {
+        int[][] mapa = {
+            {10, 12, 14, 11, 13},
+            {9, 11, 12, 10, 13},
+            {10, 10, 13, 14, 15},
+            {11, 13, 13, 12, 13},
+            {12, 14, 15, 13, 10}
+        };
+
+        System.out.println(pontoMaisAlto(mapa));
+        System.out.println(mediaAltitude(mapa));
+        System.out.println(ehPlanalto(mapa));
+    }
 }
