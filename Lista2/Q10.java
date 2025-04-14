@@ -15,4 +15,10 @@ public class Q10 {
 
         return mapa;
     }
+
+    public static void main(String[] args) {
+        int[][] mapa = new int[10][10];
+
+        mapa = criarMapa(mapa);
+    }
 }
