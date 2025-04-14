@@ -21,4 +21,21 @@ public class Q9 {
 
         return -1;
     }
+
+    public static void main(String[] args) {
+        int[][] resultados = {
+            {0, 1, 1, 0},
+            {0, 0, 1, 0},
+            {0, 0, 0, 1},
+            {1, 1, 1, 1}
+        };
+
+        int[] vitorias = vitoriasPorTime(resultados);
+
+        for(int i = 0; i < vitorias.length; i++){
+            System.out.print(vitorias[i] + " ");
+        }
+
+        System.out.println("\n" + timeInvicto(resultados));
+    }
 }
