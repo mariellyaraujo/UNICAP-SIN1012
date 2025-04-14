@@ -37,7 +37,8 @@ public class Q6 {
 
         char jogador = 'X';
 
-        Vencer(tab, jogador);
+        System.out.print(Vencer(tab, jogador));
+        
     }
     
 }
