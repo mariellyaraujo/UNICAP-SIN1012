@@ -12,6 +12,18 @@ public class Q7 {
 
         return totalProduto;
     }
+    public static double[] totalPorTrimestre(double[][] vendas){
+        double[] totalTrimestre = new double[3];
+
+        for(int i = 0; i < vendas.length; i++){
+            for(int j = 0; j < vendas[i].length; j++){
+                totalTrimestre[j] += vendas[j][i];
+            }
+        }
+
+        return totalTrimestre;
+    }
+
     public static void main(String[] args){
         double[][] vendas = {
             {100.00, 120.0, 130.0, 140.0},
