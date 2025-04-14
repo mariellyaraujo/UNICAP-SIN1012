@@ -32,10 +32,11 @@ public class Q9 {
 
         int[] vitorias = vitoriasPorTime(resultados);
 
+        System.out.print("vitórias = ");
         for(int i = 0; i < vitorias.length; i++){
             System.out.print(vitorias[i] + " ");
         }
 
-        System.out.println("\n" + timeInvicto(resultados));
+        System.out.println("\ntime invicto = " + timeInvicto(resultados));
     }
 }
