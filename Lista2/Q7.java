@@ -13,11 +13,11 @@ public class Q7 {
         return totalProduto;
     }
     public static double[] totalPorTrimestre(double[][] vendas){
-        double[] totalTrimestre = new double[3];
+        double[] totalTrimestre = new double[4];
 
         for(int i = 0; i < vendas.length; i++){
             for(int j = 0; j < vendas[i].length; j++){
-                totalTrimestre[j] += vendas[j][i];
+                totalTrimestre[j] += vendas[i][j];
             }
         }
 
@@ -38,5 +38,10 @@ public class Q7 {
             {200.0, 210.0, 220.0, 230.0}
         };
 
+        System.out.print("Total por produto: ");
+        printVetor(totalPorProduto(vendas));
+
+        System.out.print("Total por trimestre: ");
+        printVetor(totalPorTrimestre(vendas));
     }
 }
