@@ -11,4 +11,14 @@ public class Q9 {
         }
         return vitorias;
     }
+
+    public static int timeInvicto (int[][] resultados){
+        int[] vitorias = vitoriasPorTime(resultados);
+
+        for(int i = 0; i < vitorias.length; i++){
+            if(vitorias[i] == 4) return i;
+        }
+
+        return -1;
+    }
 }
