@@ -32,11 +32,11 @@ public class Q2 {
         int[] votos = {0, 1,4,3,3,2,1,4,4,2,0,1,1,3,2,2,4,4,1,0};
         int[] contagem = contarVotos(votos);
 
-
+        System.out.print("contagem = ");
         for(int i = 0; i < contagem.length; i++){
             System.out.print(contagem[i] + " ");
         }
 
-        System.out.println(vencedor(contagem));
+        System.out.println("\nvencedor = " + vencedor(contagem));
     }
 }
