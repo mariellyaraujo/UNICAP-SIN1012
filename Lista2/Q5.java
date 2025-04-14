@@ -26,4 +26,15 @@ public class Q5 {
 
         return frequencia;
     }
+
+    public static double satisfacaoMedia(int[] opinioes){
+        double soma = 0;
+
+        int[] frequencia = frequencia(opinioes);
+
+        for(int i = 0; i < frequencia.length; i++){
+            soma += frequencia[0] * (i+1);
+        }
+        return soma / opinioes.length;
+    }
 }
