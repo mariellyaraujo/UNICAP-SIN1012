@@ -23,6 +23,13 @@ public class Q7 {
 
         return totalTrimestre;
     }
+    public static void pintVetor(double[] x){
+        for(int i = 0; i < x.length; i++){
+            System.out.print(x[i] + " ");
+        }
+
+        System.out.println();
+    }
 
     public static void main(String[] args){
         double[][] vendas = {
