@@ -10,4 +10,15 @@ public class Q3 {
 
         return soma / temps.length;
     }
+
+    public static int diasAcimaMedia(double[] temps){
+        int count = 0;
+        double media = media(temps);
+
+        for(int i = 0; i < temps.length; i++){
+            if(temps[i] > media) count++;
+        }
+
+        return count;
+    }
 }
