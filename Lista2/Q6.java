@@ -7,7 +7,7 @@ public class Q6 {
         for(int i = 0; i < tab.length; i++){
             linha = 0;
             coluna = 0;
-            for(int j = 0; i < tab.length; i++){
+            for(int j = 0; j < tab.length; j++){
                 if (i == j) {
                     if(tab[i][j] == jogador){
                         digPrincipal++;
