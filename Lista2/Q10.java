@@ -55,8 +55,9 @@ public class Q10 {
 
         int[] posicaoC = posicaoDoChefe(mapa);
 
-        System.out.println(contarInimigos(mapa));
-        System.out.println(haInimigoNaDiagonal(mapa));
+        System.out.println("quantidade de inimigos = " + contarInimigos(mapa));
+        System.out.println("há inimigos na diagonal? = " + haInimigoNaDiagonal(mapa));
+        System.out.print("posição do chefe = ");
         for(int i = 0; i < posicaoC.length; i++){
             System.out.print(posicaoC[i] + " ");
         }
