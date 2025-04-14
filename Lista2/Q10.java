@@ -16,6 +16,15 @@ public class Q10 {
         return mapa;
     }
 
+    public static int contarInimigos(int[][] mapa){
+        int count = 0;
+        for(int i = 0; i < mapa.length; i++){
+            for(int j = 0; j < mapa[i].length; j++){
+                if(mapa[i][j] == 1) count++;
+            }
+        }
+        return count;
+    }
     public static void main(String[] args) {
         int[][] mapa = new int[10][10];
 
