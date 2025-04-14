@@ -2,7 +2,7 @@ package Lista2;
 
 public class Q6 {
 
-    public static void Vencer(char[][] tab, char jogador){
+    public static boolean Vencer(char[][] tab, char jogador){
         int digPrincipal = 0, digSecundaria = 0;
         for(int i = 0; i < tab.length; i++){
             int linha = 0, coluna = 0;
@@ -16,6 +16,17 @@ public class Q6 {
                 if(i + j == tab.length - 1 && tab[i][j] == jogador) digSecundaria++;
                 
             }
+
+            if(linha == 3) return true;
+            if(coluna == 3) return true;
+        }
+
+        if(digPrincipal == 3) {
+            return true;
+        } else if (digSecundaria == 3){
+            return true;
+        } else {
+            return false;
         }
 
     }
