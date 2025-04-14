@@ -25,6 +25,15 @@ public class Q10 {
         }
         return count;
     }
+
+    public static boolean haInimigoNaDiagonal(int[][] mapa){
+        for(int i = 0; i < mapa.length; i++){
+            for(int j = 0; j < mapa[i].length; j++){
+                if(i == j && mapa[i][j] == 1) return true;
+            }
+        }
+        return false;
+    }
     public static void main(String[] args) {
         int[][] mapa = new int[10][10];
 
