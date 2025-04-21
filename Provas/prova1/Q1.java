@@ -11,7 +11,8 @@ public class Q1 {
 
         System.out.println(soma);
     }
+    
     public static void main(String[] arg){
-        int[] vetor = {1, 2, 3, 4, 5}; 
+        int[] vetor = {1, 2, 3, 4, 5,6,7,8,9,10}; 
     }
 }
