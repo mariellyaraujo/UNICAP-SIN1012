@@ -31,21 +31,7 @@ public class Q2 {
             {2, 0, 3},
             {1, 3, 0}
         };
-
-        int[][] t2 = {
-            {1, 1, 1},
-            {1, 1, 1},
-            {1, 1, 1}
-        };
-
-        int[][] t3 = {
-            {1, 1, 1},
-            {1, 1, 2},
-            {1, 1, 1}
-        };
         printMatriz(t1);
         System.out.println(ehSimetrico(t1));
-        System.out.println(ehSimetrico(t2));
-        System.out.println(ehSimetrico(t3));
     }
 }
