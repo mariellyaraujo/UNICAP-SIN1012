@@ -1,6 +1,9 @@
 package Provas.prova1;
 
 public class Q3 {
+    public static void print(int[] x){
+        for(int i = 0; i < x.length; i++) System.out.print(x[i] + " ");
+    }
     public static void main(String[] args) {
         int[] nums = {5, 10, 15, 20, 25};
 
