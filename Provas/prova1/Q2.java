@@ -40,9 +40,12 @@ public class Q2 {
 
         int[][] t3 = {
             {1, 1, 1},
-            {1, 1, 1},
-            {1, 1, 2}
+            {1, 1, 2},
+            {1, 1, 1}
         };
-
+        printMatriz(t1);
+        System.out.println(ehSimetrico(t1));
+        System.out.println(ehSimetrico(t2));
+        System.out.println(ehSimetrico(t3));
     }
 }
