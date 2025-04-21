@@ -14,6 +14,7 @@ public class Q3 {
         }
 
         System.out.println("a - A estrutura de repetição troca a ordem do vetor, o deixando de trás para frente");
-        System.out.println("b - ");
+        System.out.print("b - ");
+        print(nums);
     }
 }
