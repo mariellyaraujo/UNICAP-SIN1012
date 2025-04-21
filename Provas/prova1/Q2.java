@@ -24,4 +24,25 @@ public class Q2 {
             return false;
         }
     }
+
+    public static void main(String[] args){
+        int[][] t1 = {
+            {0, 2, 1},
+            {2, 0, 3},
+            {1, 3, 0}
+        };
+
+        int[][] t2 = {
+            {1, 1, 1},
+            {1, 1, 1},
+            {1, 1, 1}
+        };
+
+        int[][] t3 = {
+            {1, 1, 1},
+            {1, 1, 1},
+            {1, 1, 2}
+        };
+
+    }
 }
