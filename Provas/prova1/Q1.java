@@ -11,7 +11,13 @@ public class Q1 {
 
         System.out.println(soma);
     }
-    
+    public static void maior (int[] x){
+        int maiorN = 0, indiceMaior = 0;
+        for(int i = 0; i < x.length; i++){
+            if(x[i] > maiorN) maiorN = x[i]; indiceMaior = i;
+        }
+        System.out.println(maiorN + ", " + indiceMaior);
+    }
     public static void main(String[] arg){
         int[] vetor = {1, 2, 3, 4, 5,6,7,8,9,10}; 
     }
