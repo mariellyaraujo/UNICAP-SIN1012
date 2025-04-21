@@ -8,7 +8,14 @@ public class Q14 {
 
             if(n % divisor == 0) return false;
 
-            return ehPrimo(n, divisor + 1)
+            return ehPrimo(n, divisor + 1);
+        }
+
+        public static void main(String[] args){
+            int n = 17;
+            int d = 2;
+
+            System.out.println(ehPrimo(n, d));
         }
 
 }
