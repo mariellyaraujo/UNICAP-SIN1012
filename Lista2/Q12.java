@@ -5,4 +5,13 @@ public class Q12 {
         if(n==0) return "";
         return decimalParaBinario((n / 2) + (n % 2));
     }
+
+    public static void main(String[] args){
+        int n = 13;
+
+        String binario = decimalParaBinario(n);
+        String result = binario.isEmpty() ? "0" : binario;
+        
+        System.out.println(result);
+    }
 }
