@@ -1,22 +1,39 @@
-#Ordenação
-- a eficiência muitas vezes se da com a ordenação de uma lista: como ordem crescente, decrescente, alfabetica
-###Interna
-- quando os dados estão sendo ordenados na memoria principal
-###Externa
-- ordenados na memória auxiliar
+# Ordenação
 
-##Preucupações
-- o tempo da ordenação;
-- economia de memória.
+- A eficiência muitas vezes depende da ordenação de uma lista: como ordem crescente, decrescente ou alfabética.
 
-#Selection Sort
-- a ideia da ordenação por seleção é procupar o menor número toda vida
-###Exemplo:
-31586 - procurar o menor número e colocar na primeira posição (e troca com aquele que está na primeira posição);
-13586 - menor: 3 (continua na mesma posição;
-13586 - menor: 5 (continua na mesma posição);
-13586 - menor: 6 (troca a posição com o 8);
+### Ordenação Interna
+- Quando os dados estão sendo ordenados na memória principal.
 
-vetor final: 13568
+### Ordenação Externa
+- Quando os dados são ordenados utilizando memória auxiliar.
 
-###visualgo.net
+## Preocupações
+
+- O tempo de ordenação;
+- Economia de memória.
+
+# Selection Sort
+
+- A ideia da ordenação por seleção é procurar o menor número a cada iteração.
+
+### Exemplo:
+
+Lista original: `3 1 5 8 6`
+
+1. Procurar o menor número e colocá-lo na primeira posição (trocando com quem estiver lá):  
+   `1 3 5 8 6`
+
+2. O menor número da sublista restante é 3 (já está na posição correta):  
+   `1 3 5 8 6`
+
+3. O menor da próxima sublista é 5 (já está correto):  
+   `1 3 5 8 6`
+
+4. O menor entre 8 e 6 é 6 (trocar com o 8):  
+   `1 3 5 6 8`
+
+**Vetor final ordenado:** `1 3 5 6 8`
+
+### Ferramenta útil para visualizar:
+[visualgo.net](https://visualgo.net)
