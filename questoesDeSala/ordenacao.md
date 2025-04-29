@@ -35,5 +35,24 @@ Lista original: `3 1 5 8 6`
 
 **Vetor final ordenado:** `1 3 5 6 8`
 
+<pre>public static void selection(int[] v, int n){
+   int i, j, min, aux;
+
+   for(i = 0; i < n-1; i++){
+      min = 1;
+      for(j = i+1; j < n; j++){
+         if(v[j] < v[min]){
+            min = j;
+         }           
+      }
+      if(v[i] != v[min]){
+         aux = v[i];
+         v[i] = v[min];
+         v[min] = aux;
+      }
+   }
+                   
+}</pre>
+
 ### Ferramenta útil para visualizar:
 [visualgo.net](https://visualgo.net)
