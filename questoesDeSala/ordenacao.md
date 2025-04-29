@@ -1,4 +1,4 @@
-# Ordenação
+#  Ordenação
 
 - A eficiência muitas vezes depende da ordenação de uma lista: como ordem crescente, decrescente ou alfabética.
 
