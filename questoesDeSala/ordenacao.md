@@ -22,7 +22,7 @@
 Lista original: `3 1 5 8 6`
 
 1. Procurar o menor número e colocá-lo na primeira posição (trocando com quem estiver lá):  
-   `*1* 3 5 8 6`
+   `**1** 3 5 8 6`
 
 2. O menor número da sublista restante é 3 (já está na posição correta):  
    `*1 3* 5 8 6`
