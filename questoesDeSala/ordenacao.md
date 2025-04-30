@@ -56,3 +56,11 @@ Lista original: `3 1 5 8 6`
 
 ### Ferramenta útil para visualizar:
 [visualgo.net](https://visualgo.net)
+
+### Características
+- muito custoso, já que ele vai rodar todas as linhas do inicio ao fim.
+- não é recomendado para vetores já ordenados e vetores decrescentes
+
+# Insertion Sort
+- ele vai comparando (de trás para frente) cada elemento do vetor;
+- compara se o elemento é menor que todos os elementos que estão atrás dele;
