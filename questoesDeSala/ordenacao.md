@@ -64,3 +64,7 @@ Lista original: `3 1 5 8 6`
 # Insertion Sort
 - ele vai comparando (de trás para frente) cada elemento do vetor;
 - compara se o elemento é menor que todos os elementos que estão atrás dele;
+
+<pre>
+  
+</pre>
