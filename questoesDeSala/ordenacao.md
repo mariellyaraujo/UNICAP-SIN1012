@@ -22,16 +22,16 @@
 Lista original: `3 1 5 8 6`
 
 1. Procurar o menor número e colocá-lo na primeira posição (trocando com quem estiver lá):  
-   `1 3 5 8 6`
+   `*1* 3 5 8 6`
 
 2. O menor número da sublista restante é 3 (já está na posição correta):  
-   `1 3 5 8 6`
+   `*1 3* 5 8 6`
 
 3. O menor da próxima sublista é 5 (já está correto):  
-   `1 3 5 8 6`
+   `*1 3 5* 8 6`
 
 4. O menor entre 8 e 6 é 6 (trocar com o 8):  
-   `1 3 5 6 8`
+   `*1 3 5 6* 8`
 
 **Vetor final ordenado:** `1 3 5 6 8`
 
