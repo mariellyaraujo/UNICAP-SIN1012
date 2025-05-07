@@ -64,7 +64,31 @@ Lista original: `3 1 5 8 6`
 # Insertion Sort
 - ele vai comparando (de trás para frente) cada elemento do vetor;
 - compara se o elemento é menor que todos os elementos que estão atrás dele;
+- troca cada vez que o número "da vez" for menor que o anterior. ex.: 231 -> 213 -> 123
 
 <pre>
   
 </pre>
+
+# BubbleSort
+- o número vai flutuando entre o vetor
+- sempre compara 2 números em uma "rodada de laço"
+- fixa do fim para o começo
+
+  <pre>
+  public static void bubbleSort(int[] v, int n){
+    int i, fim, aux;
+    for(fim = n-1; fim > 0; fim--){
+      for(i = 0; i < fim; i++){
+        if(v[i] > v[i+1]) {
+          aux = v[i];
+          v[i] = v[i+1];
+          v[i+1] = aux;
+        }
+      }
+    }
+  } 
+</pre>
+
+### Características
+- o mais simples de codar, porém um dos mais custosos
