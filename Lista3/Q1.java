@@ -18,6 +18,14 @@ public class Q1 {
 
         int[] v = preencheVetor(n, s);
 
+        boolean naoEncontrado = true;
+        for(int i = 0; i < v.length; i++){
+            if (v[i] == busca){
+                System.err.println(i);
+                naoEncontrado = false;
+            }
+        }
+        if(naoEncontrado == true) System.err.println("-1");
         
     }
 }
