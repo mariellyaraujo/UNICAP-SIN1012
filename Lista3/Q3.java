@@ -16,5 +16,6 @@ public class Q3 {
         int busca = s.nextInt();
 
         int[] v = preencheVetor(n);
+        printVetor(v);
     }
 }
