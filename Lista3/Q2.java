@@ -18,6 +18,15 @@ public class Q2 {
         if (naoEncontrado == true) System.out.println("nao encontrado");
     }
     public static void main(String[] args) {
-        
+        Scanner s = new Scanner(System.in);
+
+        int n = s.nextInt();
+        s.nextLine(); 
+
+        String[] v = preencheVetor(n, s);
+
+        String busca = s.nextLine();
+
+        buscaLivros(v, busca);
     }
 }
