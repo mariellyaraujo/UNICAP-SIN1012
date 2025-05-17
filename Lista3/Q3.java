@@ -6,7 +6,15 @@ public class Q3 {
         for(int i = 0; i < n; i++) v[i] = i;
         return v;
     }
+
+    public static void printVetor(int[] v){
+        for(int i = 0; i < v.length; i++) System.err.println(v[i]);
+    }
     public static void main(String[] args) {
-        
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int busca = s.nextInt();
+
+        int[] v = preencheVetor(n);
     }
 }
