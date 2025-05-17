@@ -18,11 +18,21 @@ public class Q3 {
         int[] v = preencheVetor(n);
         printVetor(v);
 
-        boolean naoEncontrado = true;
         int inicio = 0;
         int fim = v.length - 1;
-        int meio, count = 0;
+        int meio, count = 0, posicao = -1;
 
-        
+        while(inicio <= fim){
+            count++;
+            meio = (int) ((inicio +  fim) / 2);
+            if(v[meio] == busca){
+                posicao = meio;
+                break;
+            } else if (v[meio] < busca){
+                inicio = meio + 1;
+            } else fim = meio -1;
+        }
+
+        System.out.println(posicao + " " + count);
     }
 }
