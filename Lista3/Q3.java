@@ -34,5 +34,7 @@ public class Q3 {
         }
 
         System.out.println(posicao + " " + count);
+
+        s.close();
     }
 }
