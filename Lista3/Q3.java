@@ -17,5 +17,12 @@ public class Q3 {
 
         int[] v = preencheVetor(n);
         printVetor(v);
+
+        boolean naoEncontrado = true;
+        int inicio = 0;
+        int fim = v.length - 1;
+        int meio, count = 0;
+
+        
     }
 }
