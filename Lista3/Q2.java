@@ -6,6 +6,17 @@ public class Q2 {
         for(int i = 0; i < n; i++) v[i] = s.nextLine();
         return v;
     }
+
+    public static void buscaLivros (String[] v, String busca){
+        boolean naoEncontrado = true;
+        for(int i = 0; i < v.length; i++){
+            if(v[i].toLowerCase().contains(busca.toLowerCase())){
+                System.out.println(v[i]);
+                naoEncontrado = false;
+            }
+        }
+        if (naoEncontrado == true) System.out.println("nao encontrado");
+    }
     public static void main(String[] args) {
         
     }
