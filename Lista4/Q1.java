@@ -34,7 +34,7 @@ public class Q1 {
         alunos[4].nota = 5.67;
 
         for(int i = 0; i < alunos.length; i++){
-            System.out.println("nome: " + alunos[i].nome + "; nota: " + alunos[i].nota);
+            System.out.println("nome: " + alunos[i].nome + " | nota: " + alunos[i].nota);
         }
     }
 }
