@@ -9,6 +9,10 @@ public class Q1 {
     public static void main(String[] args){
         Aluno[] alunos = new Aluno[5];
 
+        for(int i = 0; i < alunos.length; i++){
+            alunos[i] = new Aluno();
+        }
+
         alunos[0].nome = "Ana Maria Braga";
         alunos[0].idade = 100000;
         alunos[0].nota = 8.76;
