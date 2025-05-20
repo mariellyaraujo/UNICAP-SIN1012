@@ -16,7 +16,7 @@ public class Q2 {
 
         Produto p2 = new Produto();
         p2.nome = "pão de mel";
-        p2.preco = 7.99;
+        p2.preco = 7.80;
         p2.quantidade = 60;
 
         Produto p3 = new Produto();
@@ -27,5 +27,11 @@ public class Q2 {
         produtos.add(p1);
         produtos.add(p2);
         produtos.add(p3);
+
+        for(int i = 0; i < produtos.size(); i++){
+            Produto p = produtos.get(i);
+
+            System.out.println("nome: " + p.nome + " | valor total em estoque: R$" + p.preco * p.quantidade);
+        }
     }
 }
