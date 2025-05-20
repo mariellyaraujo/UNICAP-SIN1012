@@ -23,5 +23,9 @@ public class Q2 {
         p3.nome = "tititi de cebola";
         p3.preco = 1.50;
         p3.quantidade = 300;
+
+        produtos.add(p1);
+        produtos.add(p2);
+        produtos.add(p3);
     }
 }
