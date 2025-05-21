@@ -58,5 +58,7 @@ public class Q3 {
         livros[9].titulo = "Redoma de Vidro";
         livros[9].autor = "Sylvia Plath";
         livros[9].anoPublicacao = 1963;
+
+        printIf(livros);
     }
 }
