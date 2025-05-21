@@ -17,6 +17,13 @@ public class Q5 {
         }
         return carros;
     }
+    public static void printIf (Carro[] v){
+        for(int i = 0; i < v.length; i++){
+            if (v[i].ano > 2020){
+                System.out.println(v[i].modelo + ", " + v[i].cor);
+            }
+        }
+    }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Carro[] carros = new Carro[5];
