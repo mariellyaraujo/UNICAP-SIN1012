@@ -16,6 +16,27 @@ public class Q4 {
         }
 
         return m;
+    } 
+    public static void buscaBinariaMatriz(String[][] m, String busca){
+        int meio;
+        for(int i = 0; i < m.length; i++){
+            int inicio = 0;
+            int fim = m.length -1;
+
+            while(inicio <= fim){
+            meio = (int) ((inicio +  fim) / 2);
+            int comparacao = m[i][meio].compareTo(busca);
+
+            if(comparacao == 0){
+                System.out.println(m[i][meio]);
+                return;
+            } else if (comparacao < 0){
+                inicio = meio + 1;
+            } else fim = meio -1;
+        }
+        }
+
+        System.out.println("nao encontrado");
     }
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
