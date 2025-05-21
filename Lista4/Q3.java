@@ -5,6 +5,13 @@ class Livro {
     int anoPublicacao;
 }
 public class Q3 {
+    public static void printIf(Livro[] v){
+        for(int i = 0; i < v.length; i++){
+            if(v[i].anoPublicacao > 2010){
+                System.out.println(v[i].titulo + ", " + v[i].autor);
+            }
+        }
+    }
     public static void main(String[] args) {
         Livro[] livros = new Livro[10];
 
