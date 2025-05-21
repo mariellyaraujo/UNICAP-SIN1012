@@ -20,15 +20,15 @@ public class Q4 {
     public static void buscaBinariaMatriz(String[][] m, String busca){
         int meio;
         for(int i = 0; i < m.length; i++){
-            int inicio = 0;
-            int fim = m.length -1;
+            int inicio = 1;
+            int fim = m[i].length -1;
 
             while(inicio <= fim){
             meio = (int) ((inicio +  fim) / 2);
             int comparacao = m[i][meio].compareTo(busca);
 
             if(comparacao == 0){
-                System.out.println(m[i][meio]);
+                System.out.println(m[i][0]);
                 return;
             } else if (comparacao < 0){
                 inicio = meio + 1;
@@ -46,5 +46,9 @@ public class Q4 {
         s.nextLine();
 
         String[][] livros = preencheMatriz(l, c, s);
+
+        String busca = s.nextLine();
+
+        buscaBinariaMatriz(livros, busca);
     }
 }
