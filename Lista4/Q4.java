@@ -17,7 +17,7 @@ public class Q4 {
         filmes[0].genero = "Suspense";
         filmes[0].duracaoMinutos = 99;
 
-        filmes[1].titulo = "missao impossivel 999";
+        filmes[1].titulo = "Missao Impossivel 999";
         filmes[1].genero = "Ação";
         filmes[1].duracaoMinutos = 170;
 
@@ -32,5 +32,11 @@ public class Q4 {
         filmes[4].titulo = "O Que é Isso, Companheiro?";
         filmes[4].genero = "Drama";
         filmes[4].duracaoMinutos = 110;
+
+        for(int i = 0; i < filmes.length; i++){
+            if (filmes[i].genero.equals("Ação") || filmes[i].duracaoMinutos > 120) {
+                System.out.println(filmes[i].titulo);
+            }
+        }
     }
 }
