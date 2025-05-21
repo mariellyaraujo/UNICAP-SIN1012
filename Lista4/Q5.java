@@ -13,7 +13,8 @@ public class Q5 {
             carros[i] = new Carro();
             carros[i].modelo = s.nextLine();
             carros[i].ano = s.nextInt();
-            carros[i].cor = s.next();
+            s.nextLine();
+            carros[i].cor = s.nextLine();
         }
         return carros;
     }
@@ -30,6 +31,7 @@ public class Q5 {
         int n = carros.length;
         carros = preencheVetor(n, s);
     
+        printIf(carros);
     }
     
 }
