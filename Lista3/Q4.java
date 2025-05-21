@@ -22,5 +22,8 @@ public class Q4 {
 
         int l = s.nextInt();
         int c = s.nextInt();
+        s.nextLine();
+
+        String[][] livros = preencheMatriz(l, c, s);
     }
 }
