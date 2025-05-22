@@ -14,6 +14,13 @@ public class Q5 {
         }
         return v;
     }
+
+    public static double Mediana(int[] v){
+        double mediana = 0;
+
+        return mediana;
+    }
+
     public static void vendasProdutos(Scanner s){
         int n = s.nextInt();
 
