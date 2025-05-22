@@ -26,6 +26,11 @@ public class Q5 {
         return mediana;
     }
 
+    public static int[] preencheVetor(int[] v, Scanner s){
+
+        return v;
+    }
+
     public static void vendasProdutos(Scanner s){
         int n = s.nextInt();
 
