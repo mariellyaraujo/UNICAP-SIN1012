@@ -17,7 +17,11 @@ public class Q5 {
 
     public static double Mediana(int[] v){
         double mediana = 0;
+        if(v.length % 2 == 0){
 
+        } else {
+            mediana = v[(v.length+1)/2];
+        }
         return mediana;
     }
 
