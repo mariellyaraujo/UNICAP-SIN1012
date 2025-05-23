@@ -28,6 +28,13 @@ public class Q7 {
     }
 
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int n = s.nextInt();
+
+        int[] v = preencheVetor(n, s);
+        v = bubbleSortDesc(v, n);
+
         
     }
 }
