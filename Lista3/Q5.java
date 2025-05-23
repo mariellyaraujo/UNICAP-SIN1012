@@ -31,6 +31,10 @@ public class Q5 {
         return v;
     }
 
+    public static void printVetor(int[] v){
+        for(int i = 0; i < v.length; i++) System.out.print(v[i] + " ");
+    }
+
     public static void vendasProdutos(Scanner s, int num){
         int n = s.nextInt();
 
