@@ -18,10 +18,10 @@ public class Q5 {
     public static double Mediana(int[] v){
         double mediana = 0;
         if(v.length % 2 == 0){
-            mediana = (v[v.length/2] + v[(v.length/2)+1]) / 2;
+            mediana = (v[v.length/2 -1] + v[v.length/2]) / 2;
 
         } else {
-            mediana = v[(v.length+1)/2];
+            mediana = v[(v.length)/2];
         }
         return mediana;
     }
