@@ -31,10 +31,16 @@ public class Q5 {
         return v;
     }
 
-    public static void vendasProdutos(Scanner s){
+    public static void vendasProdutos(Scanner s, int num){
         int n = s.nextInt();
 
         int[] v = new int[n];
+
+        v = preencheVetor(v, s);
+        v = insertionSort(v);
+
+        System.out.println("Vendas ordenadas do produto " + num + ": ");
+
     }
     public static void main(String[] args) {
         
