@@ -25,10 +25,16 @@ public class Q6 {
         }
         return v;
     }
+    public static void printVetor(double[] v){
+        for(int i = 0; i < v.length; i++) System.out.print(v[i] + " ");
+    }
     public static void sortLivros(Scanner s){
         int n = s.nextInt();
 
         double[] v = new double[n];
+
+        preencheVetor(v, s);
+        selectionSort(v);
 
     }
     public static void main(String[] args){
