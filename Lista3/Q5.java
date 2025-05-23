@@ -27,7 +27,7 @@ public class Q5 {
     }
 
     public static int[] preencheVetor(int[] v, Scanner s){
-
+        for(int i = 0; i < v.length;i++) v[i] = s.nextInt();
         return v;
     }
 
