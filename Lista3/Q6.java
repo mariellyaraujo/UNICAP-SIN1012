@@ -28,13 +28,21 @@ public class Q6 {
     public static void printVetor(double[] v){
         for(int i = 0; i < v.length; i++) System.out.print(v[i] + " ");
     }
-    public static void sortLivros(Scanner s){
+    public static void sortLivros(Scanner s, int num){
         int n = s.nextInt();
 
         double[] v = new double[n];
 
         preencheVetor(v, s);
         selectionSort(v);
+
+        System.out.print("Precos ordenados da secao" + num + ": ");
+        printVetor(v);
+
+        System.out.println();
+
+        System.out.println("Mais barato da secao " + num + ": " + v[0]);
+        System.out.println("Mais caro da secao " + num + ": " + v[v.length]);
 
     }
     public static void main(String[] args){
