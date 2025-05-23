@@ -27,6 +27,10 @@ public class Q7 {
         return v;
     }
 
+    public static void printVetor (int[] v){
+        for(int i = 0; i < v.length; i++) System.out.print(v[i] + " ");
+    }
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
@@ -35,6 +39,6 @@ public class Q7 {
         int[] v = preencheVetor(n, s);
         v = bubbleSortDesc(v, n);
 
-        
+
     }
 }
