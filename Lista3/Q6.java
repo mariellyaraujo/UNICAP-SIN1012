@@ -42,7 +42,7 @@ public class Q6 {
         System.out.println();
 
         System.out.println("Mais barato da secao " + num + ": " + v[0]);
-        System.out.println("Mais caro da secao " + num + ": " + v[v.length]);
+        System.out.println("Mais caro da secao " + num + ": " + v[v.length - 1]);
 
     }
     public static void main(String[] args){
