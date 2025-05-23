@@ -43,19 +43,19 @@ public class Q5 {
         v = preencheVetor(v, s);
         v = insertionSort(v);
 
-        System.out.println("Vendas ordenadas do produto " + num + ": ");
+        System.out.print("Vendas ordenadas do produto " + num + ": ");
         printVetor(v);
-
+        System.out.println();
         System.out.println("Mediana do produto " + num + ": " + Mediana(v));
 
     }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-
         int n = s.nextInt();
 
         for(int i = 0; i < n; i++){
-            vendasProdutos(s, i);
+            int num = i + 1;
+            vendasProdutos(s, num);
         }
     }
 }
