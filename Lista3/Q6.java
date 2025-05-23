@@ -8,7 +8,8 @@ public class Q6 {
 
     }
     public static double[] preencheVetor(double[] v, Scanner s){
-        for(int i - 0; i < v.length; i++) v[i] = s.nextDouble();
+        for(int i = 0; i < v.length; i++) v[i] = s.nextDouble();
+        return v;
     }
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
