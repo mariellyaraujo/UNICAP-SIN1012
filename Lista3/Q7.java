@@ -26,4 +26,8 @@ public class Q7 {
         }
         return v;
     }
+
+    public static void main(String[] args) {
+        
+    }
 }
