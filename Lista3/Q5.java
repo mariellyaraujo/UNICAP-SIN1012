@@ -44,6 +44,9 @@ public class Q5 {
         v = insertionSort(v);
 
         System.out.println("Vendas ordenadas do produto " + num + ": ");
+        printVetor(v);
+
+        System.out.println("Mediana do produto " + num + ": " + Mediana(v));
 
     }
     public static void main(String[] args) {
