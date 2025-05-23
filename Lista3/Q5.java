@@ -10,7 +10,7 @@ public class Q5 {
                 v[j+1] = v[j];
                 j = j - 1;
             }
-            v[j-1] = chave;
+            v[j+1] = chave;
         }
         return v;
     }
