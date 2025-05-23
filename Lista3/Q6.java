@@ -36,7 +36,7 @@ public class Q6 {
         preencheVetor(v, s);
         selectionSort(v);
 
-        System.out.print("Precos ordenados da secao" + num + ": ");
+        System.out.print("Precos ordenados da secao " + num + ": ");
         printVetor(v);
 
         System.out.println();
