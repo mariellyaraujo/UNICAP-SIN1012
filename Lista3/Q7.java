@@ -39,6 +39,11 @@ public class Q7 {
         int[] v = preencheVetor(n, s);
         v = bubbleSortDesc(v, n);
 
+        System.out.print("Avaliacoes ordenadas: ");
+        printVetor(v);
+        System.out.println();
 
+        System.out.println("Melhor avaliacao: " + v[0]);
+        System.out.println("Pior avaliacao: " + v[v.length-1]);
     }
 }
